@@ -9,6 +9,7 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.4/ScrollTrigger.min.js"></script>
 </head>
 <body>
+    <!-- Navbar -->
     <nav class="navbar">
         <ul>
             <li><a href="#about">About Me</a></li>
@@ -18,23 +19,22 @@
         </ul>
     </nav>
 
+    <!-- Banner -->
     <section class="banner">
         <header>
-            <div data-aos="fade-up">
-                <h2>Muhammed Sina Gün</h2>
-                <p>Computer Engineering Student</p>
-            </div>
-            <img src="images/145281408.jpg" alt="Muhammed Sina Gün" class="profile-photo">
+            <h1>Muhammed Sina Gün</h1>
+            <p>Computer Engineering Student</p>
         </header>
-        <img src="images/bg.jpg" alt="Background" class="image">
     </section>
 
+    <!-- About Me Section -->
     <section id="about">
         <h2>About Me</h2>
-        <p>My name is Muhammed Sina Gün. I am a Computer Engineering student at Istanbul Arel University.</p>
+        <p>I am a Computer Engineering student at Istanbul Arel University.</p>
         <p>I love technology. It makes me excited and happy. I work hard to learn new things and improve myself.</p>
     </section>
 
+    <!-- Skills Section -->
     <section id="skills">
         <h2>Skills</h2>
         <ul>
@@ -45,6 +45,7 @@
         </ul>
     </section>
 
+    <!-- Projects Section -->
     <section id="projects">
         <h2>Projects</h2>
         <article>
@@ -61,16 +62,21 @@
         </article>
     </section>
 
+    <!-- Contact Section -->
     <section id="contact">
         <h2>Contact</h2>
-        <p>Email: <a href="mailto:muhammedsina47@outlook.com">muhammedsina47@outlook.com</a></p>
-        <p>Phone: +905437245985</p>
-        <p>LinkedIn: <a href="https://www.linkedin.com/in/muhammed-sina-gün-5335b9290" target="_blank">Visit LinkedIn</a></p>
-        <p>GitHub: <a href="https://github.com/MrMuhammedSinaGun" target="_blank">View GitHub</a></p>
+        <form id="contact-form">
+            <input type="text" name="name" placeholder="Your Name" required>
+            <input type="email" name="email" placeholder="Your Email" required>
+            <textarea name="message" placeholder="Your Message" required></textarea>
+            <button type="submit">Send Message</button>
+        </form>
     </section>
+
+    <footer>
+        <p>© 2024 Muhammed Sina Gün. All Rights Reserved.</p>
+    </footer>
 
     <script src="script.js"></script>
 </body>
 </html>
-
-
