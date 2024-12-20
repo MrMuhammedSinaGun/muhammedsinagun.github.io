@@ -6,21 +6,33 @@
     <meta name="description" content="Muhammed Sina Gün's personal website">
     <title>Muhammed Sina Gün - Portfolio</title>
     <link rel="stylesheet" href="style.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.4/gsap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.4/ScrollTrigger.min.js"></script>
 </head>
 <body>
-    <header>
-        <h1>Muhammed Sina Gün</h1>
-        <p>Computer Engineering Student | Istanbul Arel University</p>
-        <nav>
-            <ul>
-                <li><a href="#about">About Me</a></li>
-                <li><a href="#skills">Skills</a></li>
-                <li><a href="#projects">Projects</a></li>
-                <li><a href="#contact">Contact</a></li>
-            </ul>
-        </nav>
-    </header>
+    <!-- Navbar -->
+    <nav class="navbar">
+        <ul>
+            <li><a href="#about">About Me</a></li>
+            <li><a href="#skills">Skills</a></li>
+            <li><a href="#projects">Projects</a></li>
+            <li><a href="#contact">Contact</a></li>
+        </ul>
+    </nav>
 
+    <!-- Banner Section -->
+    <section class="banner">
+        <header>
+            <div data-aos="fade-up">
+                <h2>Muhammed Sina Gün</h2>
+                <p>Aspiring Computer Engineer</p>
+            </div>
+            <img src="images/145281408.jpg" alt="Muhammed Sina Gün" class="profile-photo">
+        </header>
+        <img src="images/bg.jpg" alt="Background" class="image">
+    </section>
+
+    <!-- Main Content -->
     <main>
         <!-- About Me Section -->
         <section id="about">
@@ -75,6 +87,7 @@
         </section>
     </main>
 
+    <!-- Footer -->
     <footer>
         <p>© 2024 Muhammed Sina Gün. All Rights Reserved.</p>
     </footer>
@@ -82,3 +95,4 @@
     <script src="script.js"></script>
 </body>
 </html>
+
