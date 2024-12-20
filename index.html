@@ -10,66 +10,78 @@
 <body>
     <!-- Navbar -->
     <nav class="navbar">
-        <ul>
-            <li><a href="#about">About Me</a></li>
-            <li><a href="#skills">Skills</a></li>
-            <li><a href="#projects">Projects</a></li>
-            <li><a href="#contact">Contact</a></li>
-        </ul>
+        <div class="container">
+            <h1 class="logo">Muhammed Sina Gün</h1>
+            <ul>
+                <li><a href="#about">About Me</a></li>
+                <li><a href="#skills">Skills</a></li>
+                <li><a href="#projects">Projects</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </div>
     </nav>
 
-    <!-- Banner -->
-    <section class="banner">
-        <div class="content">
-            <img src="images/profile.jpg" alt="Profile" class="profile-photo">
-            <h1>Muhammed Sina Gün</h1>
-            <p>Computer Engineering Student</p>
+    <!-- Hero Section -->
+    <header class="hero">
+        <div class="hero-content">
+            <h1>Welcome to My Portfolio</h1>
+            <p>I'm a Computer Engineering student passionate about technology and innovation.</p>
+            <a href="#about" class="btn">Learn More</a>
+        </div>
+    </header>
+
+    <!-- About Section -->
+    <section id="about" class="section">
+        <div class="container">
+            <h2>About Me</h2>
+            <p>I am a Computer Engineering student at Istanbul Arel University. I enjoy learning and working on innovative projects.</p>
         </div>
     </section>
 
-    <!-- About Me Section -->
-    <section id="about">
-        <h2>About Me</h2>
-        <p>I am a Computer Engineering student at Istanbul Arel University. I love technology and enjoy learning new things.</p>
-    </section>
-
     <!-- Skills Section -->
-    <section id="skills">
-        <h2>Skills</h2>
-        <ul>
-            <li>Programming: C, C++, C#, Python, Java</li>
-            <li>Artificial Intelligence & Embedded Systems</li>
-            <li>Software Testing & Debugging</li>
-            <li>Team Collaboration</li>
-        </ul>
+    <section id="skills" class="section bg-light">
+        <div class="container">
+            <h2>Skills</h2>
+            <ul>
+                <li>Programming Languages: C, C++, C#, Python, Java</li>
+                <li>Artificial Intelligence & Embedded Systems</li>
+                <li>Software Testing & Debugging</li>
+                <li>Team Collaboration</li>
+            </ul>
+        </div>
     </section>
 
     <!-- Projects Section -->
-    <section id="projects">
-        <h2>Projects</h2>
-        <article>
-            <h3>Smart Home Automation System</h3>
-            <p>An IoT-based project to automate household appliances controlled via a mobile app.</p>
-        </article>
-        <article>
-            <h3>AI Chatbot</h3>
-            <p>Developed a chatbot using Python and NLP to assist users with queries.</p>
-        </article>
+    <section id="projects" class="section">
+        <div class="container">
+            <h2>Projects</h2>
+            <div class="project-grid">
+                <div class="project">
+                    <h3>Smart Home Automation System</h3>
+                    <p>An IoT project to automate home appliances using a mobile app.</p>
+                </div>
+                <div class="project">
+                    <h3>AI Chatbot</h3>
+                    <p>Developed a chatbot using Python and NLP to assist users with queries.</p>
+                </div>
+            </div>
+        </div>
     </section>
 
     <!-- Contact Section -->
-    <section id="contact">
-        <h2>Contact</h2>
-        <form id="contact-form">
-            <input type="text" name="name" placeholder="Your Name" required>
-            <input type="email" name="email" placeholder="Your Email" required>
-            <textarea name="message" placeholder="Your Message" required></textarea>
-            <button type="submit">Send Message</button>
-        </form>
-        <p id="response-message"></p>
+    <section id="contact" class="section bg-light">
+        <div class="container">
+            <h2>Contact</h2>
+            <form id="contact-form">
+                <input type="text" name="name" placeholder="Your Name" required>
+                <input type="email" name="email" placeholder="Your Email" required>
+                <textarea name="message" placeholder="Your Message" required></textarea>
+                <button type="submit">Send Message</button>
+            </form>
+        </div>
     </section>
 
-    <footer>
+    <footer class="footer">
         <p>© 2024 Muhammed Sina Gün. All Rights Reserved.</p>
     </footer>
 </body>
