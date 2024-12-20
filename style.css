@@ -110,4 +110,13 @@ footer {
     background: #333;
     color: #fff;
 }
+.banner header h1 {
+    color: #000; /* İsim siyah */
+    font-size: 3rem;
+}
+
+.banner header p {
+    color: #000; /* Unvan siyah */
+    font-size: 1.5rem;
+}
 
