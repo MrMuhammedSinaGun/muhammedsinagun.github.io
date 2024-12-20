@@ -2,8 +2,10 @@
 body, html {
     margin: 0;
     padding: 0;
-    font-family: Arial, sans-serif;
+    font-family: 'Arial', sans-serif;
+    background: #121212;
     color: #333;
+    line-height: 1.6;
 }
 
 .container {
@@ -14,12 +16,13 @@ body, html {
 
 /* Navbar */
 .navbar {
-    background: #333;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    background: rgba(0, 0, 0, 0.8);
     color: #fff;
     padding: 10px 0;
-    position: fixed;
-    width: 100%;
-    top: 0;
     z-index: 1000;
     box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
 }
@@ -39,8 +42,8 @@ body, html {
 }
 
 .navbar ul li a {
-    color: #ffd700;
     text-decoration: none;
+    color: #ffd700;
     font-weight: bold;
 }
 
@@ -61,11 +64,12 @@ body, html {
 
 .hero-content h1 {
     font-size: 3rem;
+    margin-bottom: 20px;
 }
 
 .hero-content p {
-    margin: 20px 0;
     font-size: 1.2rem;
+    margin-bottom: 20px;
 }
 
 .btn {
@@ -75,7 +79,7 @@ body, html {
     text-decoration: none;
     font-weight: bold;
     border-radius: 5px;
-    transition: background 0.3s ease;
+    transition: background 0.3s ease, color 0.3s ease;
 }
 
 .btn:hover {
@@ -92,11 +96,26 @@ body, html {
     background: #f9f9f9;
 }
 
+/* Project Grid */
+.project-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 20px;
+}
+
+.project {
+    background: #fff;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    text-align: center;
+}
+
 /* Footer */
 .footer {
     background: #333;
     color: #fff;
     text-align: center;
-    padding: 10px 0;
+    padding: 20px;
     font-size: 0.9rem;
 }
